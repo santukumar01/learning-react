@@ -20,11 +20,18 @@
 
 
 // named export
-function Button(){
+export function Button(){
     return (
         <button>Like and share</button>
     )
 }
 
-export  {Button};
+
+// function Button(){
+//     return (
+//         <button>Like and share</button>
+//     )
+// }
+
+// export  {Button};
 
