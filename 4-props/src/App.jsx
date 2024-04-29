@@ -1,15 +1,21 @@
+import React from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import AppHeader from "./component/AppHeader.jsx";
+import ErrorMsg from "./component/ErrorMsg.jsx";
+import Item from "./component/Item.jsx";
+// props should be  immutable
+// used to commnunicate betwwen two componetes -> one- wny , downstram (p arent -> child)
 function App() {
+  // let food = [];
+  let food = ["foodA", "foodB", "foodC", "foodD"];
+
   return (
-    <ul class="list-group">
-      <li class="list-group-item">An item</li>
-      <li class="list-group-item">A second item</li>
-      <li class="list-group-item">A third item</li>
-      <li class="list-group-item">A fourth item</li>
-      <li class="list-group-item">And a fifth one</li>
-    </ul>
+    <>
+      <AppHeader />
+      <ErrorMsg foodArray={food} />
+      <Item foodArray={food} />
+    </>
   );
 }
 
