@@ -1,0 +1,24 @@
+.calculator {
+  display: block;
+  margin: auto;
+  width: 200px;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.input {
+  width: 175px;
+  font-size: 20px;
+  margin: 10px;
+}
+
+.btnCon {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn {
+  width: 45px;
+  height: 45px;
+  margin: 3px;
+}
