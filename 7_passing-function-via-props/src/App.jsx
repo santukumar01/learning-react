@@ -14,6 +14,7 @@ function App() {
 
   return (
     <>
+      {/* we can also give some cutom style in Container like <Container className={styles.container}> */}
       <Container>
         <AppHeader />
         <Input handleOnChange={handleOnChange} />
