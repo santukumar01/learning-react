@@ -2,9 +2,9 @@ import React from "react";
 
 const AppHeder = () => {
   return (
-    <div>
+    <center>
       <h2>Calculator</h2>
-    </div>
+    </center>
   );
 };
 
