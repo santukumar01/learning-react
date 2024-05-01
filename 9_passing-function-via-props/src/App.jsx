@@ -15,17 +15,18 @@ function App() {
   let handleOnChange = (event) => {
     if (event.key === "Enter") {
       // console.log(event);
-      // let newFood = event.target.value;
+      let newFood = event.target.value;
       setText(event.target.value);
       event.target.value = "";
-      console.log("ytou entered", text);
+      console.log("you entered", newFood);
+      // console.log("you entered", text);
       // console.log(text);
-      // console.log(text);
-      let newArray = [...foodArr, text];
+      let newArray = [...foodArr, newFood];
 
       // console.log(newArray);
       SetFoodArr(newArray);
     }
+    setText(event.target.value);
   };
 
   // const handleClick = () => {
@@ -36,12 +37,23 @@ function App() {
   //   SetFoodArr(newArray);
   // };
 
+  // simple way to achieve this function usgin javscript
+  // const handleclick = (btn) => {
+  //   foodArr.map(
+  //     (item) => (document.getElementById(item).style.backgroundColor = "")
+  //   );
+  //   console.log(`${btn} clicked`);
+  //   let ele = document.getElementById(btn);
+  //   ele.style.backgroundColor = "blue";
+  // };
+
   return (
     <Container>
       <AppHeader />
       <Input handleOnChange={handleOnChange} />
       {/* {text} */}
       <ErrorMsg foodArr={foodArr} />
+      {/* <ItemList foodArr={foodArr} handleclick={handleclick} /> */}
       <ItemList foodArr={foodArr} />
     </Container>
   );
