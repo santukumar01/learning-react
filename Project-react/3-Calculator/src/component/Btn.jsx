@@ -1,7 +1,13 @@
 import React from "react";
 
-const Btn = ({ btnValue }) => {
-  return <button className={styles.btn}>{btnValue}</button>;
+import styles from "../App.module.css";
+
+const Btn = ({ btnVlaue, handleclick }) => {
+  return (
+    <button className={styles.btn} onClick={() => handleclick(btnVlaue)}>
+      {btnVlaue}
+    </button>
+  );
 };
 
 export default Btn;

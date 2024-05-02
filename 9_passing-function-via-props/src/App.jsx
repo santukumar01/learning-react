@@ -7,6 +7,7 @@ import Input from "./component/Input";
 import ItemList from "./component/ItemList";
 import ErrorMsg from "./component/ErrorMsg";
 function App() {
+  // state should be defined in a way that it can minimize the componetx that is  changing while changing the cur_state
   // both data and function are sending from parent  tro child
   // let foodArr = ["Dal", "Chawal", "ghee"];
   let [foodArr, SetFoodArr] = useState(["Dal", "Chawal", "ghee"]);
