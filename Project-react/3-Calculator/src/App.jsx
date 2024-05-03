@@ -10,10 +10,11 @@ function App() {
   let btn = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, "+", "-", "*", "%", "c", "="];
 
   const [activeBtn, setActiveBtn] = useState("");
-  let [ans, setAns] = useState("");
+  // let [ans, setAns] = useState("");
   // const [exp , setExp ] = useState("")
 
   const calculate = (num1, num2, mathOP) => {
+    // console.log(num1, num2);
     if (mathOP === "+") {
       console.log(num1 + num2);
       return num1 + num2;
@@ -23,31 +24,20 @@ function App() {
   const handleclick = (value) => {
     if (value === "c") {
       setActiveBtn("");
+    } else if (value === "=") {
+      const results = eval(activeBtn);
+      setActiveBtn(results);
     } else {
       let newValue = activeBtn + value;
-      let sign = null;
-      if (value === "+" || value === "-" || value === "*" || value === "%") {
-        sign = value;
-      }
       setActiveBtn(newValue);
-      let a = Number(activeBtn);
-      let b = Number(value);
-
-      if (value === "=") {
-        console.log(sign, "is clicked");
-        ans = calculate(a, b, sign);
-        setActiveBtn("");
-        setAns(ans);
-      }
     }
-    console.log(`${value} btn is clicked`);
   };
 
   return (
     <>
       <AppHeder />
       <div className={styles.calculator}>
-        <Input activeBtn={activeBtn} ans={ans} />
+        <Input activeBtn={activeBtn} />
         <ListBtn btn={btn} handleclick={handleclick} />
       </div>
     </>

@@ -1,13 +1,9 @@
 import React, { useState } from "react";
 import styles from "../App.module.css";
-const Input = ({ activeBtn, ans }) => {
+const Input = ({ activeBtn }) => {
   return (
     <div>
-      <input
-        className={styles.input}
-        type="text"
-        value={ans ? ans : activeBtn}
-      />
+      <input className={styles.input} type="text" value={activeBtn} />
     </div>
   );
 };
