@@ -1,4 +1,5 @@
 import React from "react";
+import { MdDeleteOutline } from "react-icons/md";
 import styles from "./Item.module.css";
 const Item = ({ todo, handleDelete }) => {
   return (
@@ -10,7 +11,7 @@ const Item = ({ todo, handleDelete }) => {
           className="btn btn-danger btn-sm"
           onClick={() => handleDelete(todo)}
         >
-          Delete
+          <MdDeleteOutline />
         </button>
       </div>
     </div>

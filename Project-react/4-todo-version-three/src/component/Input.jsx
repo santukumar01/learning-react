@@ -1,4 +1,5 @@
 import React from "react";
+import { IoMdAdd } from "react-icons/io";
 
 import styles from "./Input.module.css";
 
@@ -18,7 +19,7 @@ const Input = ({
     setinputDate(event.target.value);
     // console.log(event.target.value);
   };
-  console.log("del is calling");
+
   return (
     <div className="container text-center">
       <div className={`${styles.inputRow} row`}>
@@ -35,7 +36,7 @@ const Input = ({
         </div>
         <div className="col-2">
           <button className="btn btn-success " onClick={handleAdd}>
-            Add
+            <IoMdAdd />
           </button>
         </div>
       </div>
