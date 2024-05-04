@@ -1,0 +1,13 @@
+input {
+  border-radius: 10px;
+  font-size: 20px;
+  width: 100%;
+  padding: 5px;
+}
+
+.inputRow {
+  background-color: bisque;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
