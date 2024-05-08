@@ -2,10 +2,11 @@ import React, { useContext } from "react";
 
 import { useRef } from "react";
 import { PostContex } from "../Store/Contex";
+import { useNavigate } from "react-router-dom";
 
 const CreatePost = () => {
   const { addPost } = useContext(PostContex);
-
+  const navigate = useNavigate();
   const inputUserId = useRef("");
   const inputPostTitle = useRef("");
   const inputPostBody = useRef("");
@@ -39,7 +40,11 @@ const CreatePost = () => {
       }),
     })
       .then((res) => res.json())
-      .then((post) => addPost(post));
+      .then((post) => {
+        addPost(post);
+        alert("New Post Added");
+        navigate("/");
+      });
   };
 
   return (
