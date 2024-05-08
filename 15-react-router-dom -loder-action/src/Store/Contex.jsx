@@ -42,41 +42,6 @@ const PostContexProvider = ({ children }) => {
 
   const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
-    setLoading(true);
-    const controller = new AbortController();
-    const signal = controller.signal;
-    console.log("Fetch started");
-    fetch("https://dummyjson.com/posts", { signal })
-      .then((res) => res.json())
-      .then((data) => {
-        // console.log("fetch return ");
-        addPosts(data.posts);
-        setLoading(false);
-      });
-
-    return () => {
-      console.log("Cleaning up tyhe use Effect");
-      controller.abort();
-    };
-  }, []);
-
-  // const addPost = (postObj) => {
-  //   // console.log(postObj);
-  //   const createPostAction = {
-  //     type: "Add_POST",
-  //     payload: {
-  //       id: Date.now(),
-  //       userId: postObj.inputUserId,
-  //       title: postObj.inputPostTitle,
-  //       body: postObj.inputPostBody,
-  //       reactions: postObj.inputReaction,
-  //       tags: postObj.inputTags,
-  //     },
-  //   };
-  //   postDispatch(createPostAction);
-  // };
-
   // add post from server
   const addPost = (postObj) => {
     console.log("inside new post form server", postObj);
@@ -89,6 +54,7 @@ const PostContexProvider = ({ children }) => {
     postDispatch(createPostAction);
   };
 
+  // below function doest not have any use whne we use loader
   const addPosts = (posts) => {
     postDispatch({
       type: "Add_POSTS",
