@@ -78,7 +78,7 @@ export async function formAction(data) {
   postData.tags = postData.tags.split(" ");
   console.log(postData);
 
-  return fetch("https://dummyjson.com/posts/add", {
+  fetch("https://dummyjson.com/posts/add", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(postData),
