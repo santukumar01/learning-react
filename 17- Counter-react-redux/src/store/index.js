@@ -17,7 +17,7 @@ const couterReducer = (store = INITIAL_VALUE, action) => {
     return { ...store, private: !store.private };
   }
   // console.log(newStore);
-  return { ...store, counter: store.counter + number1 };
+  return { ...store, counter: store.counter + 1 };
 };
 
 const store = createStore(couterReducer);
