@@ -18,4 +18,5 @@ Learning React.
 - Advanced State Management {Context API, useReducer Hook}
 - Project: Social Media Version 1
 - Hnadling Backend API
-- Backend Dummy API, Data Fetching using Fetch function, useEffect Hook, Handling loading State, useEffect Hook Cleanup, Advanced useEffect 
+- Backend Dummy API, Data Fetching using Fetch function, useEffect Hook, Handling loading State, useEffect Hook Cleanup, Advanced useEffect
+- React-redux
