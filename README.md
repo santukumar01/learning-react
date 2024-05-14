@@ -17,8 +17,7 @@ Learning React.
 - React-Icon Library, Inspecting with React Dev Tools, How React Works, React vs Angular vs VueJs, Forms in React, useRef Hook, Spread operator and Functional updates
 - Advanced State Management {Context API, useReducer Hook}
 - Project: Social Media Version 1
-- Hnadling Backend API
+- Hnadling Backend API(dummy.JSON)
 - Backend Dummy API, Data Fetching using Fetch function, useEffect Hook, Handling loading State, useEffect Hook Cleanup, Advanced useEffect
 - React-redux
 - redux- toolKit
-
