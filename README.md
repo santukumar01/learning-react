@@ -5,7 +5,7 @@ Learning React.
 - Create React App {IDE, Using Vite, Project Structure}
 - Creating React Components {File Extensions, Class vs Function Components, JSX, Dynamic and Reusable components}
 - Introducing Bootstrap
-- Project: Todo App Version 1
+- Project: Todo App Version 1 and 
 - Project: Bharat Clock Version 1
 - Fragments, Rendering lists using Map Method, Conditional Rendering, Passing Data via Props, CSS Modules
 - Project Todo App Version 2
