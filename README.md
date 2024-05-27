@@ -22,5 +22,5 @@ Learning React.
 - React-redux
 - redux- toolKit
 - practice and prroject
-- Myntra Project complete useing redux and redux toolkit
+- Myntra Project complete useing redux and redux toolkit - Done
   
