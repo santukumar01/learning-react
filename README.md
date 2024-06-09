@@ -1,6 +1,4 @@
 Learning React.
-
-
 - Introduction {Basic ,  React and Components}
 - Create React App {IDE, Using Vite, Project Structure}
 - Creating React Components {File Extensions, Class vs Function Components, JSX, Dynamic and Reusable components}
